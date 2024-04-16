@@ -1,0 +1,15 @@
+.homecontainer{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(67, 68, 66);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    
+    
+}

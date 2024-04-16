@@ -1,0 +1,15 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #007bff;
+  }
+  
+  .GoogleLoginButton {
+    width: 210px !important;
+    height: 58px !important;
+    border-radius: 10px !important;
+    background-color: #ff4141 !important;
+
+  }

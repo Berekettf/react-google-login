@@ -1,0 +1,52 @@
+/* decrypt.css */
+
+.decrypt-container {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    height: 70vh;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #d9dadb;
+  }
+  
+  .decrypt-container h2 {
+    margin-bottom: 10px;
+    font: 1em sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .decrypt-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .decrypt-container textarea,
+  .decrypt-container input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+  .decrypt-container button {
+    height: 47px;
+    width: 150px;
+    padding: 8px 16px;
+    margin: 15px 10px 15px 0;
+    background-color: #ff4141;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .decrypt-container button:hover {
+    background-color: #0056b3;
+  }
+  
