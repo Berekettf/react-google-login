@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import CryptoJS from 'crypto-js';
-import './decrypt.css'; // Import the CSS file
+import React, { useState } from "react";
+import CryptoJS from "crypto-js";
+import "./decrypt.css"; // Import the CSS file
 
 const Decrypt = () => {
-  const [encryptedText, setEncryptedText] = useState('');
-  const [decryptionKey, setDecryptionKey] = useState('');
-  const [decryptedText, setDecryptedText] = useState('');
+  const [encryptedText, setEncryptedText] = useState("");
+  const [decryptionKey, setDecryptionKey] = useState("");
+  const [decryptedText, setDecryptedText] = useState("");
 
   const handleEncryptedTextChange = (e) => {
     setEncryptedText(e.target.value);
@@ -21,13 +21,13 @@ const Decrypt = () => {
       const decrypted = bytes.toString(CryptoJS.enc.Utf8);
       setDecryptedText(decrypted);
     } catch (error) {
-      console.error('AES decryption error:', error);
+      console.error("AES decryption error:", error);
     }
   };
-
+  //okey i make a mistake here
   const handleOtpDecrypt = () => {
     try {
-      let decryptedText = '';
+      let decryptedText = "";
       for (let i = 0; i < encryptedText.length; i++) {
         const encryptedChar = encryptedText.charCodeAt(i);
         const keyChar = decryptionKey.charCodeAt(i % decryptionKey.length);
@@ -36,7 +36,7 @@ const Decrypt = () => {
       }
       setDecryptedText(decryptedText);
     } catch (error) {
-      console.error('OTP decryption error:', error);
+      console.error("OTP decryption error:", error);
     }
   };
 
